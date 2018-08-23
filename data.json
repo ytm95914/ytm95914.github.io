@@ -106,7 +106,7 @@
 		"spzldj":"明显高质量",
 		"dyx":"否",
 		"bcbq":"",
-		"shzt":"已审核",
+		"shzt":"待审核",
 		"tjzt":"",
 		"btgyy":"封面质量分(cover_score_decimal)小于等于4"
 	}, {
@@ -128,7 +128,7 @@
 		"spzldj":"",
 		"dyx":"",
 		"bcbq":"",
-		"shzt":"已审核",
+		"shzt":"待审核",
 		"tjzt":"不推荐",
 		"btgyy":""
 	}, {
@@ -150,7 +150,7 @@
 		"spzldj":"",
 		"dyx":"",
 		"bcbq":"",
-		"shzt":"",
+		"shzt":"待审核",
 		"tjzt":"",
 		"btgyy":""
 	}, {
