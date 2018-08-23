@@ -1,0 +1,138 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.video {
+    width: 52%;
+    margin-right: 20px;
+    height: 462px;
+}
+
+.formdefault {
+    width: 46%;
+    border: 1px solid #E9F1F3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.example_video_1-dimensions {
+    width: 100%;
+    height: 100%;
+}
+
+.video-js,
+.vjs-poster {
+    width: 100%;
+    height: 100%;
+}
+
+.header ul {
+    height: 50px;
+    line-height: 50px;
+}
+
+.wxgtitle {
+    font-size: 20px;
+    font-family: 'MicrosoftYaHei-Bold';
+    color: #525C65;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    width: 18%;
+}
+
+.itemli {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #54667A;
+    letter-spacing: 0;
+}
+
+.itemli.fl {
+    margin-right: 60px;
+}
+
+.itemli.fr {
+    margin-right: 30px;
+}
+
+.layui-form-label {
+    font-size: 12px;
+    color: #333;
+    width: 88px !important;
+}
+
+.layui-input,
+.layui-select,
+.layui-textarea {
+    font-size: 12px !important;
+}
+
+.layui-form-select dl dd,
+.layui-form-select dl dt {
+    font-size: 12px !important;
+}
+
+.iconself {
+    display: inline-block;
+    padding: 6px;
+    color: #666;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    background: #F2F7F8;
+    border-radius: 50px;
+    margin-top:4px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.del{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/del.png) no-repeat;
+    background-size: contain;
+    margin-left:5px;
+}
+.layinp{
+width:380px !important;
+}
+.edit{
+width:71px;
+height:36px;
+line-height: 36px;
+display: inline-block;
+border-radius:4px;
+background: url(../images/edit.png) no-repeat;
+}
+a.edit:hover{
+    background: url(../images/editactive.png) no-repeat;   
+}
+.editactive{
+    background: url(../images/editactive.png) no-repeat;
+}
+.layui-disabled{
+    background: #F2F7F8 !important;
+}
+.layui-btn-normal{
+background: #11A0F8 !important;
+}
+.submitbtn{
+    background: #55CE63 !important;
+    border-radius: 3px !important;
+    width: 88px !important;
+    height: 36px !important;
+}
+.cancelbtn{
+    background: #92A6B1 !important;
+    border-radius: 3px !important;
+    width: 88px !important;
+    height: 36px !important;
+}
+.formsubmit{
+    padding-left:18%;
+}
+.marbot{
+    margin-bottom:5px !important;
+}

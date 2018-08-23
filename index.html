@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>登录</title>
+</head>
+<body>
+<div class="login">
+    <div class="loginform">
+        <h1 class="logintitle"><span class="blue">WXG</span>审核平台</h1>
+        <form action="">
+            <div class="username com">
+                <input type="text" class="userinp" placeholder="请输入用户名">
+                <span class="iconuser"></span>
+                <p class="tips hide">用户名不能为空</p>
+            </div>
+            <div class="psd com">
+                <input type="password" class="psdinp" placeholder="请输入密码">
+                <span class="iconpsd"></span>
+                <p class="tips hide">密码不能为空</p>
+            </div>
+            <!-- 验证码部分以后是要放开的 -->
+            <!-- <div class="com prov">
+                <input type="text" class="proving" placeholder="请输入验证码">
+            <img src="./images/edit.png" class="provimg" alt="验证码">
+            <p class="tips hide">验证码不能为空</p>
+            </div> -->
+            <div class="loginbtn">
+                <a href="javascript:;" class="loginin">登录</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="./lib/jquery-3.3.1.min.js"></script>
+<script src="./js/login.js"></script>
+</html>
