@@ -122,13 +122,11 @@ background: #11A0F8 !important;
     background: #55CE63 !important;
     border-radius: 3px !important;
     width: 88px !important;
-    height: 36px !important;
 }
 .cancelbtn{
     background: #92A6B1 !important;
     border-radius: 3px !important;
     width: 88px !important;
-    height: 36px !important;
 }
 .formsubmit{
     padding-left:18%;
@@ -143,4 +141,7 @@ background: #11A0F8 !important;
     font-size:14px;
     color:#000;
     padding-bottom:20px;
+}
+.alert{
+    border-radius:3px;
 }

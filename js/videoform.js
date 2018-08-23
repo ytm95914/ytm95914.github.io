@@ -16,4 +16,10 @@ $(function () {
     $(document).off('click','.del').on('click','.del',function(){
         $(this).parent().remove();
     })
+    $(document).off('click','.alert').on('click','.alert',function(){
+        layer.prompt({title: '不推荐理由', formType: 2}, function(text, index){
+            layer.close(index);
+            layer.msg('演示完毕！您的口令：'+ pass +'<br>您最后写下了：'+text);
+          });        
+    })
 })
