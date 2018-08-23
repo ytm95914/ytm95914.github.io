@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>视频库</title>
-	<link rel="stylesheet" href="./css/reset.css">
+	<!-- <link rel="stylesheet" href="./css/reset.css"> -->
 	<script src="./lib/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="./lib/layui/css/layui.css">
 	<!-- <script src="./lib/layui/layui.all.js"></script> -->
@@ -155,7 +155,7 @@ div#demo1 {
 			<li class="layui-nav-item navpng2"><a href="workShop.html">工作间</a></li>
 		</ul>
 		<div class="userinfo">
-			<img src="./images/userytm.png" alt="lallal" style="width:25px;height:25px;border-radius: 15px;">
+			<img src="" alt="lallal" style="width:25px;height:25px;border-radius: 15px;">
 			<span class="username">张三</span>
 			<span class="out">退出</span>
 		</div>
@@ -306,30 +306,29 @@ div#demo1 {
 			<button class="layui-btn" data-type="isAll">验证是否全选</button>
 		</div>
 
-		<table class="layui-table" lay-data="{height:332, url:'data1.json', page:true, id:'idTest'}" lay-filter="demo">
+		<table class="layui-table" lay-data="{ url:'data1.json', page:true, id:'idTest'}" lay-filter="demo">
 			<thead>
 				<tr>
 					<!-- <th lay-data="{type:'checkbox', fixed: 'left'}"></th> -->
 					<th lay-data="{field:'id', width:80,  fixed: true}">VID</th>
-					<th lay-data="{field:'username', width:80}">优先级</th>
-					<th lay-data="{field:'sex', width:100}">发布时间</th>
-					<th lay-data="{field:'city', width:100}">用户头像</th>
-					<th lay-data="{field:'sign', width:160}">用户昵称</th>
 					<th lay-data="{field:'experience', width:150}">视频标题</th>
 					<th lay-data="{field:'classify', width:150}">视频简介</th>
-					<th lay-data="{field:'wealth', width:150}">视频封面</th>
+					<th lay-data="{field:'username', width:80}">优先级</th>
+					<th lay-data="{field:'sex', width:100}">发布时间</th>
+					<th lay-data="{field:'shzt', width:150}">审核状态</th>
+					<th lay-data="{field:'tjzt', width:150}">推荐状态</th>
 					<th lay-data="{field:'score', width:150}">用户定义分类</th>
-					<th lay-data="{field:'classify', width:150}">用户自定义标签</th>
-					<th lay-data="{field:'classify', width:150}">机器推荐标签</th>
-					<th lay-data="{field:'classify', width:150}">看一看标签</th>
-					<th lay-data="{field:'classify', width:150}">原创度</th>
-					<th lay-data="{field:'classify', width:150}">时效性</th>
-					<th lay-data="{field:'classify', width:150}">视频质量等级</th>
-					<th lay-data="{field:'classify', width:150}">地域性</th>
-					<th lay-data="{field:'classify', width:150}">补充标签</th>
-					<th lay-data="{field:'classify', width:150}">原因</th>
-					<th lay-data="{field:'classify', width:150}">审核状态</th>
-					<th lay-data="{field:'classify', width:150}">启标状态</th>
+					<th lay-data="{field:'yhzdibq', width:150}">用户自定义标签</th>
+					<th lay-data="{field:'jjtjbq', width:150}">机器推荐标签</th>
+					<th lay-data="{field:'kykbq', width:150}">看一看标签</th>
+					<th lay-data="{field:'ycd', width:150}">原创度</th>
+					<th lay-data="{field:'sxx', width:150}">时效性</th>
+					<th lay-data="{field:'spzldj', width:150}">视频质量等级</th>
+					<th lay-data="{field:'dyx', width:150}">地域性</th>
+					<th lay-data="{field:'bcbq', width:150}">补充标签</th>
+					<th lay-data="{field:'btgyy', width:150}">不通过原因</th>
+					<th lay-data="{field:'city', width:100}">用户头像</th>
+					<th lay-data="{field:'sign', width:160}">用户昵称</th>
 					<th lay-data="{fixed: 'right', width:200, align:'center', toolbar: '#barDemo'}">操作</th>
 				</tr>
 			</thead>
