@@ -136,3 +136,11 @@ background: #11A0F8 !important;
 .marbot{
     margin-bottom:5px !important;
 }
+.picture{
+    padding:10px;
+}
+.picture h3{
+    font-size:14px;
+    color:#000;
+    padding-bottom:20px;
+}
