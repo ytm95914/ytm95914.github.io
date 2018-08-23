@@ -69,7 +69,7 @@
 .username{
 	 padding-right: 20px;
 }
-a.out {
+span.out {
     height: 50px;
     display: inline-block;
     width: 50px;
@@ -145,19 +145,60 @@ div#demo1 {
     box-sizing: border-box;
     padding-left: 10px;
 }
+.layui-table-page {
+    position: relative;
+    width: 100%;
+    padding: 7px 7px 0;
+    border-width: 1px 0 0;
+    height: 41px;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+}
+.layui-layer-dialog {
+    min-width: 400px;
+}
+.layui-disabled{
+    background: #F2F7F8 !important;
+}
+.layui-btn-normal{
+background: #11A0F8 !important;
+}
+.submitbtn{
+    background: #55CE63 !important;
+    border-radius: 3px !important;
+    width: 88px !important;
+    height: 36px !important;
+}
+.cancelbtn{
+    background: #92A6B1 !important;
+    border-radius: 3px !important;
+    width: 88px !important;
+    height: 36px !important;
+}
+.formsubmit{
+    padding-left:18%;
+}
+.marbot{
+    margin-bottom:5px !important;
+}
+.layui-layer-prompt .layui-layer-btn {
+    padding-top: 0;
+    text-align: center;
+}
 </style>
 </head>
 <body>
 	<div class="header">
-		<div class="logo"><span class="logopng"></span><a href="./videoLibrary.html">WXG平台</a></div>
+		<div class="logo"><span class="logopng"></span><a href="">WXG平台</a></div>
 		<ul class="layui-nav layui-bg-cyan">
 			<li class="layui-nav-item navpng1"><a href="videoLibrary.html">视频库</a></li>
 			<li class="layui-nav-item layui-this navpng2"><a href="">工作间</a></li>
 		</ul>
 		<div class="userinfo">
-			<img src="images/userytm.png" alt="lallal" style="width:25px;height:25px;border-radius: 15px;">
+			<img src="" alt="lallal" style="width:25px;height:25px;border-radius: 15px;">
 			<span class="username">张三</span>
-			<a href="./index.html" class="out">退出</a>
+			<span class="out">退出</span>
 		</div>
 	</div>
 	<div class="query">
@@ -211,7 +252,7 @@ div#demo1 {
 			<button class="layui-btn" data-type="isAll">验证是否全选</button>
 		</div>
 
-		<table class="layui-table" lay-data="{height:420, url:'data.json', page:true, id:'idTest'}" lay-filter="demo">
+		<table class="layui-table" lay-data="{ url:'data0.json', page:true, id:'idTest'}" lay-filter="demo">
 			<thead>
 				<tr>
           <!-- <th lay-data="{type:'checkbox', fixed: 'left'}"></th> -->
@@ -241,8 +282,8 @@ div#demo1 {
 		</table>
  
 		<script type="text/html" id="barDemo">
-			<a class="layui-btn layui-btn-xs" lay-event="edit">推荐</a>
-			<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">不推荐</a>
+			<a class=" "style="color: #55CE63" lay-event="edit" href="videoform.html">推荐</a>
+			<a class=" " style="color:#FE7575 "lay-event="del" >不推荐</a>
 		</script>
 		<!-- <div id="demo1"></div> -->
 	</div>
@@ -281,12 +322,26 @@ layui.use('table', function(){
     if(obj.event === 'detail'){
       layer.msg('ID：'+ data.id + ' 的查看操作');
     } else if(obj.event === 'del'){
-      layer.confirm('真的删除行么', function(index){
+      /*layer.confirm('请填写不推荐理由', function(index){
         obj.del();
         layer.close(index);
-      });
+      });*/
+      /*layer.open({
+        title: '请填写不推荐理由',
+        area: ['500px', '300px'],
+        btn: ['确认'],
+        content: '<div style="width=200px;"><textarea name="" id="" cols="30" rows="10" style="margin: 0px; width: 457px; height: 137px;"></textarea></div>',
+        yes: function(index, layero){
+          obj.del();
+          layer.close(index);
+        }
+      });*/
+      layer.prompt({title: '不推荐理由', formType: 2}, function(text, index){
+         obj.del();
+        layer.close(index);
+      }); 
     } else if(obj.event === 'edit'){
-      layer.alert('编辑行：<br>'+ JSON.stringify(data))
+      
     }
   });
   
@@ -327,5 +382,14 @@ layui.use(['laypage', 'layer'], function(){
   });
   
 });
+
+$('.lindan').on('click',function(){
+  layui.use('table', function(){
+  var table = layui.table;
+  table.reload('idTest', {
+  url: '/data.json',
+});
+})
+})
 </script>
 </html>

@@ -149,15 +149,15 @@ div#demo1 {
 </head>
 <body>
 	<div class="header">
-		<div class="logo"><span class="logopng"></span><a href="javascript:;">WXG平台</a></div>
+		<div class="logo"><span class="logopng"></span><a href="">WXG平台</a></div>
 		<ul class="layui-nav layui-bg-cyan">
 			<li class="layui-nav-item layui-this navpng1"><a href="">视频库</a></li>
 			<li class="layui-nav-item navpng2"><a href="workShop.html">工作间</a></li>
 		</ul>
 		<div class="userinfo">
-			<img src="images/userytm.png" alt="lallal" style="width:25px;height:25px;border-radius: 15px;">
+			<img src="" alt="lallal" style="width:25px;height:25px;border-radius: 15px;">
 			<span class="username">张三</span>
-			<a class="out" href="./index.html">退出</a>
+			<span class="out">退出</span>
 		</div>
 	</div>
 	<div class="query">
@@ -337,8 +337,8 @@ div#demo1 {
  
 		<script type="text/html" id="barDemo">
 			
-			<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-			<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">不推荐</a>
+			<a class=" "style="color: #55CE63" lay-event="edit" href="videoform.html">推荐</a>
+			<a class=" " style="color:#FE7575 "lay-event="del" >不推荐</a>
 		</script>
 		<!-- <div id="demo1"></div> -->
 	</div>
@@ -377,12 +377,12 @@ layui.use('table', function(){
     if(obj.event === 'detail'){
       layer.msg('ID：'+ data.id + ' 的查看操作');
     } else if(obj.event === 'del'){
-      layer.confirm('真的删除行么', function(index){
+      /*layer.confirm('真的删除行么', function(index){
         obj.del();
         layer.close(index);
-      });
+      });*/
     } else if(obj.event === 'edit'){
-      layer.alert('编辑行：<br>'+ JSON.stringify(data))
+     /* layer.alert('编辑行：<br>'+ JSON.stringify(data))*/
     }
   });
   
