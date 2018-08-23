@@ -3,7 +3,7 @@
 	"msg": "",
 	"count": 1000,
 	"data": [{
-		"id": "<a href='videoform.html'>10000</a>",
+		"id": "10000",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",
@@ -14,7 +14,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10001</a>",
+				"id": "10001",
 		"username": "中",
 		"sex": "2018-7-1",
 		"city": "",
@@ -25,7 +25,7 @@
 		"classify": "作家",
 		"score": "二级"
 	}, {
-				"id": "<a href='videoform.html'>10002</a>",
+				"id": "10002",
 		"username": "高",
 		"sex": "2018-8-23",
 		"city": "",
@@ -36,7 +36,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10003</a>",
+				"id": "10003",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",
@@ -47,7 +47,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10004</a>",
+				"id": "10004",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",
@@ -58,7 +58,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10005</a>",
+				"id": "10005",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",
@@ -69,7 +69,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10006</a>",
+				"id": "10006",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",
@@ -80,7 +80,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10007</a>",
+				"id": "10007",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",
@@ -91,7 +91,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10008</a>",
+				"id": "10008",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",
@@ -102,7 +102,7 @@
 		"classify": "作家",
 		"score": "一级"
 	}, {
-				"id": "<a href='videoform.html'>10009</a>",
+				"id": "10009",
 		"username": "高",
 		"sex": "2018-8-17",
 		"city": "",

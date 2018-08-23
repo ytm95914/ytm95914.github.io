@@ -121,17 +121,38 @@ div#demo1 {
     font-size: 12px;
     text-align: center;
 }
-
-
-
+.layui-nav .layui-nav-item a {
+    display: block;
+    padding: 0 35px;
+    color: #fff;
+    color: rgba(255,255,255,.7);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.navpng1 {
+    background: url(images/video.png) no-repeat top 18px left 5px;
+}
+.navpng2{
+   background: url(images/work.png) no-repeat top 18px left 5px;
+}
+.resetbtn{
+    background: url(images/query.png) no-repeat top 10px left 7px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.lindan{
+    background: url(images/lingdan.png) no-repeat top 10px left 7px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
 </style>
 </head>
 <body>
 	<div class="header">
 		<div class="logo"><span class="logopng"></span><a href="">WXG平台</a></div>
 		<ul class="layui-nav layui-bg-cyan">
-			<li class="layui-nav-item"><a href="videoLibrary.html">视频库</a></li>
-			<li class="layui-nav-item layui-this"><a href="">工作间</a></li>
+			<li class="layui-nav-item navpng1"><a href="videoLibrary.html">视频库</a></li>
+			<li class="layui-nav-item layui-this navpng2"><a href="">工作间</a></li>
 		</ul>
 		<div class="userinfo">
 			<img src="" alt="lallal" style="width:25px;height:25px;border-radius: 15px;">
@@ -155,33 +176,33 @@ div#demo1 {
 			<div class="layui-inline">
 				<label class="layui-form-label">VID：</label>
 				<div class="layui-input-inline">
-					<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+					<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入VID" class="layui-input">
 				</div>
 			</div>
 			<div class="layui-inline">
 				<label class="layui-form-label yhfl">用户定义分类：</label>
 				<div class="layui-input-inline">
 					<select name="quiz">
-						<option value="">请选择问题</option>
-							<option value="你的工号">你的工号</option>
-							<option value="你最喜欢的老师">你最喜欢的老师</option>
+						<option value="">请选择</option>
+							<option value="你的工号">一级</option>
+							<option value="你最喜欢的老师">二级</option>
 					</select>
 				</div>
 			</div>
 			<div class="layui-inline">
 				<div class="layui-input-inline">
 					<select name="quiz">
-						<option value="">请选择问题</option>
-							<option value="你的工号">你的工号</option>
-							<option value="你最喜欢的老师">你最喜欢的老师</option>
+						<option value="">请选择</option>
+							<option value="你的工号">一级</option>
+							<option value="你最喜欢的老师">二级</option>
 					</select>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="btn">
-		<button class="layui-btn layui-btn-primary" style="background-color: #11A0F8;color: #ffffff;width: 70px; height: 36px;">领单</button>
-		<button class="layui-btn layui-btn-primary"  style="background-color: #A6B7BF;color: #ffffff;width: 70px; height: 36px;">重置</button>
+		<button class="layui-btn layui-btn-primary  lindan" style="background-color: #11A0F8;color: #ffffff;width: 70px; height: 36px;">领单</button>
+		<button class="layui-btn layui-btn-primary resetbtn"  style="background-color: #A6B7BF;color: #ffffff;width: 70px; height: 36px;">重置</button>
 	</div>
 	<div class="table" style="width: 100%">
 		<div class="layui-btn-group demoTable" style="display: none;">
