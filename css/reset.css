@@ -139,3 +139,9 @@ span.out {
     cursor: pointer;
     background: url(../images/out.png) no-repeat top 16px left 2px;
 }
+.out{
+	color: #fff;
+}
+.out:hover{
+	color: #f2f2f2;
+}
