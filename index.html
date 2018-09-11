@@ -1,54 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <title>登录</title>
-</head>
-<style>
-input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
-	-webkit-text-fill-color: #333 !important;
-	-webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
-    background-color:transparent;
-    background-image: none;
-     transition: background-color 50000s ease-in-out 0s;
-}
-input {
-	 background-color:transparent;
-}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>关于腾讯视频播放接口调用</title>
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript" src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js"></script>
 
-</style>
-<body>
-<div class="login">
-    <div class="loginform">
-        <h1 class="logintitle"><span class="blue">WXG</span>审核平台</h1>
-        <form action="">
-            <div class="username com">
-                <input type="text" class="userinp" placeholder="请输入用户名">
-                <span class="iconuser"></span>
-                <p class="tips hide">用户名不能为空</p>
-            </div>
-            <div class="psd com">
-                <input type="password" class="psdinp" placeholder="请输入密码">
-                <span class="iconpsd"></span>
-                <p class="tips hide">密码不能为空</p>
-            </div>
-            <!-- 验证码部分以后是要放开的 -->
-            <!-- <div class="com prov">
-                <input type="text" class="proving" placeholder="请输入验证码">
-            <img src="./images/edit.png" class="provimg" alt="验证码">
-            <p class="tips hide">验证码不能为空</p>
-            </div> -->
-            <div class="loginbtn">
-                <a href="javascript:;" class="loginin">登录</a>
-            </div>
-        </form>
-    </div>
-</div>
-</body>
-<script src="./lib/jquery-3.3.1.min.js"></script>
-<script src="./js/login.js"></script>
-</html>
+    </head>
+
+    <body>
+    <div id="mod_player" ><!-- 这个div是播放器准备输出的位置 --></div>
+            <div id="img"><img src="#" width="340" height="227" onclick="playV()"/></img></div>
+    <script language="javascript">
+            function playV(){
+                var video = new tvp.VideoInfo();
+                //向视频对象传入视频vid
+                video.setVid("v07758jtigq");
+
+                var player = new tvp.Player(600, 450);
+                player.addParam("flashskin", "http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf");
+                //设置播放器初始化时加载的视频
+                player.setCurVideo(video);
+                //输出播放器
+                player.write("mod_player");
+            }
+    </script>
+    </body>
+</html> 
